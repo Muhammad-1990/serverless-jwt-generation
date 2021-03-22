@@ -1,1 +1,4 @@
 node_modules
+jwtRS256.key.pub
+jwtRS256.key
+jwtRS256-no-line-breaks.key
