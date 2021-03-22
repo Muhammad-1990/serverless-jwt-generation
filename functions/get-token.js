@@ -2,7 +2,6 @@ import bcrypt from "bcryptjs";
 import { createJwtCookie } from "../helpers/jwt-helper"
 
 export async function handler(event) {
-  const dbClient = createClient()
   let errorStatusCode = 500
 
   try {
