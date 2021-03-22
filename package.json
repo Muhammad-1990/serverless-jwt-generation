@@ -1,0 +1,24 @@
+{
+  "name": "serverless-jwt-generation",
+  "version": "1.0.0",
+  "description": "netlify lambda function to generate jwt",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify-lambda serve functions",
+    "build": "netlify-lambda build functions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammad-1990/serverless-jwt-generation.git"
+  },
+  "author": "Muhammad Ahmod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muhammad-1990/serverless-jwt-generation/issues"
+  },
+  "homepage": "https://github.com/Muhammad-1990/serverless-jwt-generation#readme",
+  "devDependencies": {
+    "netlify-lambda": "^2.0.3"
+  }
+}
