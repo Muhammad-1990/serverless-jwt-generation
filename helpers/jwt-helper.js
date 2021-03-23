@@ -11,7 +11,6 @@ function createJwtCookie(clientId, email) {
         "-----BEGIN RSA PRIVATE KEY-----\n" +
         process.env.JWT_SECRET_KEY +
         "\n-----END RSA PRIVATE KEY-----";
-
     // 7. Create a JWT with the registered user and email as the payload
     const token = jwt.sign({ clientId, email }, secretKey, {
         algorithm: "RS256",
@@ -28,4 +27,8 @@ function createJwtCookie(clientId, email) {
     return jwtCookie
 }
 
-export { createJwtCookie }
+function clearCookie() {
+    return "jwt=deleted; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+  }
+
+export { createJwtCookie, clearCookie }
